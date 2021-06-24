@@ -17,12 +17,14 @@ services:
     build:
       context: ./frontend
     container_name: "frontend"
+    image: flangular_angular_frontend:latest
     volumes:
       - shared:/app/dist
   backend:
     build:
       context: ./backend
     container_name: "backend"
+    image: flangular_flask_backend:latest
     ports:
       - "8000:8000"
   
