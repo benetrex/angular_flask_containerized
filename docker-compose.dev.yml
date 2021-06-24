@@ -1,0 +1,20 @@
+version: "3"
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile-dev
+    container_name: "frontend"
+    volumes:
+      - ./frontend/src:/app/src # for watching files
+    ports:
+      - "4200:4200"
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile-dev
+    container_name: "backend"
+    volumes:
+      - ./backend:/app # for watching files
+    ports:
+      - "8000:8000"
