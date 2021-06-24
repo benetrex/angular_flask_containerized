@@ -9,6 +9,7 @@ services:
       - ./frontend/src:/app/src # for watching files
     ports:
       - "4200:4200"
+      
   backend:
     build:
       context: ./backend
