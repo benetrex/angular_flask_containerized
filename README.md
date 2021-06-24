@@ -12,7 +12,7 @@ The application has a development and a production setup which can be executed a
 The Angular frontend will be accessible at `http://localhost:4200`
 
 The Flask backend will be accessible at `http://localhost:8000` running under `gunicorn` with the reload option enabled.
-You can change these ports in the docker-compose.dev.yml
+You can change these ports in the `docker-compose.dev.yml`
 
 ![Development Architecture](readme_images/development.png)
 
